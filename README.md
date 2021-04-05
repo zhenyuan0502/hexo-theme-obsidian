@@ -171,6 +171,8 @@ gitalk:
   # Ensure uniqueness and length less than 50
   id: location.pathname
   # Facebook-like distraction
+  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+  # Custom proxy server
 
 # Valine comment plugin (recommended!)
 # see https://valine.js.org/quickstart.html
@@ -230,6 +232,24 @@ codemirror:
 
 # Enabling mathjax support
 mathjax: true
+
+# This function is only used for those that server is located in China. If your server is located in outside China, you do not need to add the following code.
+# Enable
+beian: true
+# Beian location，for example：粤ICP备
+#beianloc:
+# Beian ID，for example：2021022134号
+#beianid:
+
+# Custom mouse style
+mouse:
+# Enable custom mouse style
+  enable: true
+# Default style
+  default: /default.png
+# Hover sytle
+  pointer: /hover.png
+
 ```
 
 </details>
@@ -304,6 +324,13 @@ categories: - Category1 - Category2
 tags: - Tag1 - Tag2
 mp3: http://domain.com/awesome.mp3
 cover: http://domain.com/awesome.jpg
+
+author: 3rdparty author
+is3rdparty: true
+socials: 
+  page: https://example
+avatar: /example.jpg
+slogan: example
 ```
 
 ### Create categories page
@@ -412,9 +439,19 @@ However you could just **sharing this project with your friends**, that would _h
 
 Thanks for your love in advance! ☀️
 
-|                                                                                                    Donating using Paypal                                                                                                     |                                                                                                 Donating in China                                                                                                 |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://www.buymeacoffee.com/tridiamond" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> | <a href="https://afdian.net/@tridiamond" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> |
+|                                                                                                                Donating using Paypal                                                                                                                 |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <a href="https://www.buymeacoffee.com/tridiamond" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60" width="217" style="height: 60px !important;width: 217px !important;" ></a> |
+
+> All donator will be enlisted as Coffee Supporter and displayed in the Sponsor list in this section.
+
+---
+
+|                                         Wechat 微信支付                                         |                                        Alipay 支付宝支付                                        |
+| :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+| <img src="https://img-blog.csdnimg.cn/20210330175112304.png" alt="Buy Me A Coffee" width="150"> | <img src="https://img-blog.csdnimg.cn/20210330175153827.png" alt="Buy Me A Coffee" width="150"> |
+
+> 所有赞助人将被列为咖啡支持者，并在本节的赞助人名单中显示。
 
 ## Join the Community
 

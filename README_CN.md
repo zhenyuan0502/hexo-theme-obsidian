@@ -167,6 +167,8 @@ gitalk:
   # Ensure uniqueness and length less than 50
   id: location.pathname
   # Facebook-like distraction
+  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+  # 自定义代理服务器以防止403错误
 
 # Valine 评论插件 (推荐使用!)
 # 查看 https://valine.js.org/quickstart.html
@@ -228,6 +230,24 @@ codemirror:
 
 # 启用 mathjax 支持
 mathjax: true
+
+# 此功能仅使用国内服务器的用户需要配置，国外服务器开办网站不需要备案。
+# 启用备案
+beian: true
+# 备案地区，例子：粤ICP备
+#beianloc:
+# 备案号，例子：2021022134号
+#beianid:
+
+# 自定义鼠标样式
+mouse:
+# 启用
+  enable: true
+# 默认样式
+  default: /default.png
+# 悬浮及点击样式
+  pointer: /hover.png
+
 ```
 
 </details>
@@ -243,7 +263,7 @@ mathjax: true
 
 > 版本`v1.3.5`开始代码高亮已经用`codemirror`替换了`highlight.js`，
 > 但是 Hexo 默认的 highlight 配置还是需要关闭的。
-> ！！所以无比把 Hexo 默认的 highlight 配置改为`enable: flase` ！！
+> ！！所以务必把 Hexo 默认的 highlight 配置改为`enable: flase` ！！
 
 在博客根目录的`_config.yml`修改
 
@@ -301,6 +321,13 @@ categories: - 分类 1 - 分类 2
 tags: - 标签 1 - 标签 2
 mp3: http://domain.com/awesome.mp3
 cover: http://domain.com/awesome.jpg
+
+author: 第三方作者名
+is3rdparty: true
+socials: 
+  page: https://example
+avatar: /example.jpg
+slogan: example
 ```
 
 ### 创建分类页
